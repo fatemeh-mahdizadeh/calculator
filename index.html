@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>calculator</title>
+    
+    
+</head>
+<body class="bg-purple-300">
+    <main class="lg:w-2/12  w-6/12  h-full border border-2 mx-auto border-black mt-20 rounded-2xl coler-main ">
+        
+        <article class="h-text text-blue-100 text-right mt-24 text-4xl " >
+            
+        </article>
+        <div class="my-4 mx-auto ">
+            <article class="grid grid-cols-4 w-full ">
+                <form action="" method="post" class="flex flex-col items-center  mx-0.5">
+                    
+                    <input type="button" class="text-blue-300 border-2 border-gray-900 lg:px-3 px-4 mb-1 bg-gray-900 rounded-xl mb-1 item" value="e">
+                    <input type="button" class="text-gray-600 border-2 border-gray-900 lg:px-2 px-3 py-1 my-1 bg-gray-800 rounded-lg item " onclick="resett()"  value="Ac">  
+                    <input type="button" class="text-blue-300 border-2 border-gray-900 lg:px-4 px-4 py-1 my-1 bg-gray-900 rounded-xl item " onclick="fill(this.value)" accesskey="7" value="7">
+                    <input type="button" class="text-blue-300 border-2 border-gray-900 lg:px-4 px-4 py-1 my-1 bg-gray-900 rounded-xl item"  onclick="fill(this.value)" accesskey="4" value="4">
+                    <input type="button" class="text-blue-300 border-2 border-gray-900 lg:px-4 px-4 py-1 mt-1 bg-gray-900 rounded-xl item"  onclick="fill(this.value)" accesskey="1"  value="1">
+                         
+                    
+                </form>
+                <div class="text-blue-400 flex flex-col items-center mx-0.5">
+                    
+                    <input type="button" value="M" class="item border-2 border-gray-900 lg:px-3 px-4 mb-1 bg-gray-900 rounded-xl mb-1">
+                    <input type="button" value="c" onclick="dele()" accesskey="c" class="item border-2 border-gray-800 px-4  bg-gray-800 rounded-lg px-3 py-1 my-1"> 
+                    <input type="button" value="8" onclick="fill(this.value)" accesskey="8"  class=" item border-2 border-gray-900 lg:px-4 px-4 py-1 my-1 bg-gray-900 rounded-xl">           
+                    <input type="button" value="5" onclick="fill(this.value)" accesskey="5"  class="item border-2 border-gray-900 lg:px-4 px-4 py-1 my-1 bg-gray-900 rounded-xl">            
+                    <input type="button" value="2" onclick="fill(this.value)" accesskey="2" class="item border-2 border-gray-900 lg:px-4 px-4 py-1 my-1 bg-gray-900 rounded-xl">            
+                    <input type="button" value="0" onclick="fill(this.value)" accesskey="0"  class="item border-2 border-gray-900 bg-gray-900 rounded-xl mt-3 py-1 px-10 lg:px-12 lg:py-2 mr-12 ">
+                </div>
+
+                <div class="text-blue-400 flex flex-col items-center mx-0.5">
+                    
+                    <input type="button" value="sin" class="item border-2 border-gray-900 lg:px-2 px-3 mb-1 bg-gray-900 rounded-xl mb-1"> 
+                    <input type="button" value="/" onclick="fill(this.value)" accesskey="/"  class="item border-2 border-blue-800 px-4  py-1 my-1 bg-blue-800 rounded-lg">  
+                    <input type="button" value="9" onclick="fill(this.value)" accesskey="9"  class="item border-2 border-gray-900 lg:px-4 px-4 py-1 my-1 bg-gray-900 rounded-xl">    
+                    <input type="button" value="6" onclick="fill(this.value)" accesskey="6" class= " item border-2 border-gray-900 lg:px-4 px-4 py-1 my-1 bg-gray-900 rounded-xl">  
+                    <input type="button" value="3" onclick="fill(this.value)" accesskey="3"  class="item border-2 border-gray-900 lg:px-4 px-4 py-1 my-1 bg-gray-900 rounded-xl">
+                    <input type="button" value="." onclick="fill(this.value)" accesskey="."  class="item border-2 border-gray-900 bg-gray-900 rounded-xl mt-3 py-1 lg:px-5  px-5 lg:py-2 ">
+                </div>
+
+                <div>
+                    <ul class="text-blue-400 flex flex-col items-center ml-0.5" >
+                    <input type="button" value="deg" class="item border-2 border-gray-900 lg:px-1 px-3 mb-1 bg-gray-900 rounded-xl">
+                    <input type="button" value="*" onclick="fill(this.value)" accesskey="*"  class="item border-2 border-blue-800 lg:px-3 px-4 py-1 my-1 bg-blue-800 rounded-lg"> 
+                    <input type="button" value="-" onclick="fill(this.value)" accesskey="-"  class="item border-2 border-blue-800 lg:px-3 px-4 py-1 my-1 bg-blue-800 rounded-lg"> 
+                    <input type="button" value="+" onclick="fill(this.value)" accesskey="+"  class="item border-2 border-blue-800 lg:px-3 px-4 py-4 mt-2 mb-1 bg-blue-800 rounded-lg">
+                    <input type="button" value="=" onclick="final()" accesskey="=" class="item border-2 border-blue-700 bg-blue-700 rounded-lg  px-4 mt-1 py-5 lg:px-3  ">
+                </ul>
+                </div>
+    
+            </article>
+
+        </div>
+
+        
+    </main>
+
+    
+</body>
+<script src="./app.js"></script>
+</html>

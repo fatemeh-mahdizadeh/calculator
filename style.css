@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+	list-style: none;
+    font-family: roboto;
+
+}
+.coler-main{
+    background-color: rgb(16, 12, 12);
+    
+}
+.h-text{
+    height: 120px;
+}
+main{
+    transition: all ease-out 200ms
+}
+.item:hover{
+    background-color: rgb(73, 3, 73);
+    cursor: pointer;
+
+}
